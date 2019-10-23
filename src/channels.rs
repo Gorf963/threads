@@ -17,7 +17,7 @@ pub fn channels() {
 
         // Each thread will send its id via the channel
         let child = thread::spawn(move || {
-            // The thread takes ownership over `thread_tx`
+            // The thread takes owner ship over `thread_tx`
             // Each thread queues a message in the channel
             thread_tx.send(id).unwrap();
 

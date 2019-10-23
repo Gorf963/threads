@@ -2,11 +2,13 @@ mod simple;
 mod pause;
 mod mapred;
 mod channels;
+mod jim_try;
 
 use simple::simple;
 use pause::pause;
 use mapred::mapred;
 use channels::channels;
+use jim_try::jim_try;
 
 // This is the `main` thread
 fn main() {
@@ -17,4 +19,6 @@ fn main() {
     pause();
     channels();
     pause();
+    println!("Jim Try");
+    jim_try();
 }
